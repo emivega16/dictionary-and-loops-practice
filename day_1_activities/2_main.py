@@ -39,16 +39,30 @@
     #     What would students[0]['Email'][1] return?
 
     #     Why does students[0]['Email'][0] use two sets of brackets?
-import student_data
+# import student_data
 
-# print(student_data.students)
-students = student_data.students
-print(len(students))
-print(students[0]['Combo,Name'])
-print(students[0]['Email'][0])
-print(students[0]['Email'][1])
+# # print(student_data.students)
+# students = student_data.students
+# print(len(students))
+# print(students[0]['Combo,Name'])
+# print(students[0]['Email'][0])
+# print(students[0]['Email'][1])
 
-# What is being counted?
+
+# print(len(students))
+# print(students[1]['Combo,Name'])
+# print(students[1]['CPSID'][0])
+# print(students[1]['Email'][0])
+# print(students[1]['GL'][0])
+
+# print(len(students))
+# print(students[2]['Combo,Name'])
+# print(students[2]['CPSID'][0])
+# print(students[2]['Email'][1])
+# print(students[2]['GL'][0])
+# print(students[2]['HR'[0]])
+
+# # What is being counted?
 
 # If the output is 36, what does that tell you?
 
@@ -69,10 +83,35 @@ print(students[0]['Email'][1])
 #we are also printing a line of underscores to separate the students
 #we are also printing a line of underscores to separate the students
 for student in students:
-    print(student['Combo,Name'])
-    print(student['Email'][0])
-    print(student['Email'][1])
-    print("_"*25)
+     print(student['Combo,Name'])
+     print(student['Email'][0])
+     print(student['Email'][1])
+     #get the homeroom, grade level. and cpsid
+     print(student['HR'])
+     print(student['GL'])
+     print(student['CPSID'])
+     if student ['GL'] >= '10':
+          print("you can go off campus")
+
+
+#If the last name begins with the letter "R"
+#We print out their name and homeroom
+if student['LName'][0] == "R":
+     print("your name starts with R")
+     print(student['Combo,Name'])
+     print(student['HR'])
+#if the last anme starts with the letter "L",
+#break out of the loop
+if student['LName'][0] == "L"
+break
+print("_"*25)
+    
+#then we are checking if the name 
+#if the name is in the data we are printing 
+name = input("What is your name?")
+for student 
+
+
 
 # What does the loop variable student represent on each pass?
 
@@ -88,11 +127,11 @@ for student in students:
 # we are asking the user to input their name
 # then we are checking if the name is in the data
 # if the name is in the data we are printing the name and "this works"
-name = input("what is you name?") 
-for student in students:
-    if name == student['Combo,Name']:
-        print(student['Combo,Name'])
-        print("this works")
+# name = input("what is you name?") 
+# for student in students:
+#     if name == student['Combo,Name']:
+#         print(student['Combo,Name'])
+#         print("this works")
 
 # What is the goal of this search?
 
